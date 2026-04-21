@@ -1,0 +1,22 @@
+ID,标题,作者,摘要,关键词,文件路径,创建时间
+1,Deep Learning for Automated Paper Submission,"[""Alice Zhang"", "" Bob Li"", "" Carol Wang""]",This paper presents an innovative AI-powered system for automating the academic paper submission process. Our approach leverages natural language processing and browser automation to streamline journal selection and submission workflows.,,/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_093928_test_paper.pdf,2026-02-05 09:39:28
+2,Deep Neural Networks for Image Classification,"[""Alice Zhang"", "" Bob Li""]","This paper presents a novel deep learning approach for image classification 
+        using convolutional neural networks. We propose a new architecture that combines 
+        residual connections with attention mechanisms to improve classification accuracy. 
+        Our method achieves state-of-the-art results on ImageNet dataset with 95.2% top-1 
+        accuracy. We also demonstrate the effectiveness of our approach on medical image 
+        analysis, computer vision tasks, and pattern recognition problems. The proposed 
+        model is trained using transfer learning and shows excellent performance in 
+        artificial intelligence applications.",,/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_094648_ml_paper.pdf,2026-02-05 09:46:48
+3,Attention Is All You Need: Transformer Architecture for NLP Tasks,"[""Ashish Vaswani"", "" Noam Shazeer"", "" Niki Parmar""]","We propose a new simple network architecture, the Transformer, 
+        based solely on attention mechanisms, dispensing with recurrence and convolutions 
+        entirely. Experiments on machine translation tasks show these models to be superior 
+        in quality while being more parallelizable and requiring significantly less time 
+        to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation 
+        task and 41.8 BLEU on the WMT 2014 English-to-French translation task. We demonstrate 
+        that the Transformer generalizes well to other tasks by applying it successfully to 
+        English constituency parsing with large and limited training data. The architecture 
+        uses self-attention to compute representations of its input and output without using 
+        sequence-aligned RNNs or convolution. This allows for more parallelization and has 
+        become the foundation for models like BERT, GPT, and many other natural language 
+        processing breakthroughs.",,/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_095104_demo_paper.pdf,2026-02-05 09:51:04

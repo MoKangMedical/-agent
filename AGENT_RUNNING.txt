@@ -1,0 +1,128 @@
+╔══════════════════════════════════════════════════════════════╗
+║     🤖 PaperSubmit AI Agent 已启动并运行中！                ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ Agent状态: 正在运行
+📁 监控文件夹: ~/Documents/Papers
+⏰ 扫描间隔: 每5分钟自动扫描一次
+📊 进程ID: 38041
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 如何使用（3个简单步骤）：
+
+步骤1️⃣: 放入你的论文PDF
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+方法A - 使用Finder（推荐）:
+  1. 打开Finder
+  2. 前往文件夹: ~/Documents/Papers
+  3. 把PDF文件拖进去
+
+方法B - 使用命令行:
+  cp /path/to/your/paper.pdf ~/Documents/Papers/
+
+示例:
+  cp ~/Downloads/my_research.pdf ~/Documents/Papers/
+
+步骤2️⃣: 等待Agent自动处理
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Agent会在下次扫描时（最多5分钟）自动:
+  ✓ 发现新论文
+  ✓ 提取关键词
+  ✓ 推荐期刊
+  ✓ 生成推荐报告
+
+或者立即触发扫描（不等待）:
+  cd ~/Desktop/论文投稿Agent/src/backend
+  source venv/bin/activate
+  python desktop_agent.py --folder ~/Documents/Papers --once
+
+步骤3️⃣: 查看推荐报告
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+在同一文件夹会生成:
+  📄 {论文名}_推荐报告.txt  ← 期刊推荐
+  📄 投稿状态总览.txt       ← 所有论文状态
+
+查看方法:
+  # 用文本编辑器打开
+  open ~/Documents/Papers/your_paper_推荐报告.txt
+  
+  # 或在终端查看
+  cat ~/Documents/Papers/your_paper_推荐报告.txt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 可选: 创建投稿记录
+
+如果你决定投稿，创建投稿信息文件:
+
+文件名: {论文名}_投稿信息.json
+内容:
+{
+  "journal_name": "arXiv",
+  "username": "your_username",
+  "password": "your_password",
+  "notes": "第一次投稿"
+}
+
+Agent会自动:
+  ✓ 读取投稿信息
+  ✓ 创建投稿记录
+  ✓ 生成投稿确认
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 查看Agent状态
+
+查看运行日志:
+  tail -f ~/Documents/agent_output.log
+
+查看Agent数据:
+  cat ~/Documents/Papers/.papersubmit/agent.log
+
+查看所有论文:
+  cat ~/Documents/Papers/.papersubmit/papers.json
+
+查看所有投稿:
+  cat ~/Documents/Papers/.papersubmit/submissions.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛑 停止Agent
+
+  pkill -f desktop_agent.py
+
+🔄 重启Agent
+
+  cd ~/Desktop/论文投稿Agent
+  ./start_agent.sh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 快速测试
+
+想立即看到效果？运行演示脚本:
+  cd ~/Desktop/论文投稿Agent
+  ./demo_agent.sh
+
+这会:
+  ✓ 创建一个测试论文
+  ✓ 生成推荐报告
+  ✓ 创建投稿记录
+  ✓ 展示完整流程
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 详细文档
+
+快速上手: ~/Desktop/论文投稿Agent/docs/快速上手指南.md
+完整指南: ~/Desktop/论文投稿Agent/docs/桌面Agent使用指南.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 开始使用吧！
+
+现在就把你的论文PDF放入 ~/Documents/Papers 文件夹，
+Agent会自动帮你推荐最合适的期刊！
+
+祝投稿顺利！🚀

@@ -1,0 +1,10 @@
+{
+  "auto_recommend": true,
+  "auto_backup": true,
+  "check_interval": 300,
+  "file_extensions": [
+    ".pdf"
+  ],
+  "user_email": "",
+  "default_authors": []
+}

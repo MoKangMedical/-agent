@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files
+data/papers/*
+!data/papers/.gitkeep
+data/credentials/*
+!data/credentials/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build/
+dist/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Selenium
+chromedriver
+geckodriver
+*.crx
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

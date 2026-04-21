@@ -1,0 +1,31 @@
+Dear Editor,
+
+I am writing to submit our manuscript entitled "[PAPER_TITLE]" for consideration for publication in [JOURNAL_NAME].
+
+[Brief introduction of the research topic and its significance]
+
+In this study, we [describe main methods and approach]. Our key findings include:
+1. [Key finding 1]
+2. [Key finding 2]
+3. [Key finding 3]
+
+[Explain the novelty and contribution to the field]
+
+We believe this work will be of interest to the readers of [JOURNAL_NAME] because [explain relevance to journal scope].
+
+This manuscript has not been published elsewhere and is not under consideration by another journal. All authors have approved the manuscript and agree with its submission to [JOURNAL_NAME].
+
+We suggest the following potential reviewers:
+1. [Reviewer 1 Name], [Institution], [Email]
+2. [Reviewer 2 Name], [Institution], [Email]
+3. [Reviewer 3 Name], [Institution], [Email]
+
+Thank you for considering our manuscript. We look forward to hearing from you.
+
+Sincerely,
+
+[Corresponding Author Name]
+[Title]
+[Institution]
+[Email]
+[Phone]

@@ -1,0 +1,67 @@
+{
+  "export_time": "2026-02-05T10:37:25.423469",
+  "statistics": {
+    "total_papers": 3,
+    "total_submissions": 2
+  },
+  "papers": [
+    {
+      "id": 1,
+      "title": "Deep Learning for Automated Paper Submission",
+      "authors": [
+        "Alice Zhang",
+        " Bob Li",
+        " Carol Wang"
+      ],
+      "abstract": "This paper presents an innovative AI-powered system for automating the academic paper submission process. Our approach leverages natural language processing and browser automation to streamline journal selection and submission workflows.",
+      "keywords": [],
+      "file_path": "/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_093928_test_paper.pdf",
+      "created_at": "2026-02-05T09:39:28.868389"
+    },
+    {
+      "id": 2,
+      "title": "Deep Neural Networks for Image Classification",
+      "authors": [
+        "Alice Zhang",
+        " Bob Li"
+      ],
+      "abstract": "This paper presents a novel deep learning approach for image classification \n        using convolutional neural networks. We propose a new architecture that combines \n        residual connections with attention mechanisms to improve classification accuracy. \n        Our method achieves state-of-the-art results on ImageNet dataset with 95.2% top-1 \n        accuracy. We also demonstrate the effectiveness of our approach on medical image \n        analysis, computer vision tasks, and pattern recognition problems. The proposed \n        model is trained using transfer learning and shows excellent performance in \n        artificial intelligence applications.",
+      "keywords": [],
+      "file_path": "/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_094648_ml_paper.pdf",
+      "created_at": "2026-02-05T09:46:48.102004"
+    },
+    {
+      "id": 3,
+      "title": "Attention Is All You Need: Transformer Architecture for NLP Tasks",
+      "authors": [
+        "Ashish Vaswani",
+        " Noam Shazeer",
+        " Niki Parmar"
+      ],
+      "abstract": "We propose a new simple network architecture, the Transformer, \n        based solely on attention mechanisms, dispensing with recurrence and convolutions \n        entirely. Experiments on machine translation tasks show these models to be superior \n        in quality while being more parallelizable and requiring significantly less time \n        to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation \n        task and 41.8 BLEU on the WMT 2014 English-to-French translation task. We demonstrate \n        that the Transformer generalizes well to other tasks by applying it successfully to \n        English constituency parsing with large and limited training data. The architecture \n        uses self-attention to compute representations of its input and output without using \n        sequence-aligned RNNs or convolution. This allows for more parallelization and has \n        become the foundation for models like BERT, GPT, and many other natural language \n        processing breakthroughs.",
+      "keywords": [],
+      "file_path": "/Users/linzhang/Desktop/论文投稿Agent/src/backend/../../data/papers/20260205_095104_demo_paper.pdf",
+      "created_at": "2026-02-05T09:51:04.466160"
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1,
+      "paper_id": 1,
+      "journal_name": "arXiv",
+      "status": "pending",
+      "submission_id": null,
+      "created_at": "2026-02-05T09:39:30.989553",
+      "updated_at": "2026-02-05T09:39:30.989556"
+    },
+    {
+      "id": 2,
+      "paper_id": 3,
+      "journal_name": "The Lancet",
+      "status": "pending",
+      "submission_id": null,
+      "created_at": "2026-02-05T09:51:07.621422",
+      "updated_at": "2026-02-05T09:51:07.621423"
+    }
+  ]
+}

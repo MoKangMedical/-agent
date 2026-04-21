@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Nature",
+    "impact_factor": 49.962,
+    "keywords": ["multidisciplinary", "science", "research", "biology", "physics"],
+    "review_time_days": 90,
+    "acceptance_rate": 0.08,
+    "submission_system": "editorial_manager",
+    "url": "https://www.nature.com/nature/"
+  },
+  {
+    "name": "Science",
+    "impact_factor": 47.728,
+    "keywords": ["multidisciplinary", "science", "research", "innovation"],
+    "review_time_days": 85,
+    "acceptance_rate": 0.07,
+    "submission_system": "editorial_manager",
+    "url": "https://www.science.org/"
+  },
+  {
+    "name": "arXiv",
+    "impact_factor": 0,
+    "keywords": ["preprint", "physics", "computer science", "mathematics", "ai", "machine learning"],
+    "review_time_days": 3,
+    "acceptance_rate": 0.95,
+    "submission_system": "arxiv",
+    "url": "https://arxiv.org/"
+  },
+  {
+    "name": "PLOS ONE",
+    "impact_factor": 3.752,
+    "keywords": ["open access", "multidisciplinary", "biology", "medicine", "science"],
+    "review_time_days": 60,
+    "acceptance_rate": 0.65,
+    "submission_system": "editorial_manager",
+    "url": "https://journals.plos.org/plosone/"
+  },
+  {
+    "name": "Nature Communications",
+    "impact_factor": 16.6,
+    "keywords": ["multidisciplinary", "biology", "chemistry", "physics", "earth science"],
+    "review_time_days": 75,
+    "acceptance_rate": 0.25,
+    "submission_system": "editorial_manager",
+    "url": "https://www.nature.com/ncomms/"
+  },
+  {
+    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "impact_factor": 24.314,
+    "keywords": ["computer vision", "machine learning", "ai", "pattern recognition"],
+    "review_time_days": 120,
+    "acceptance_rate": 0.15,
+    "submission_system": "scholarone",
+    "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+  },
+  {
+    "name": "Cell",
+    "impact_factor": 64.5,
+    "keywords": ["biology", "molecular biology", "cell biology", "genetics"],
+    "review_time_days": 95,
+    "acceptance_rate": 0.06,
+    "submission_system": "editorial_manager",
+    "url": "https://www.cell.com/cell/home"
+  },
+  {
+    "name": "The Lancet",
+    "impact_factor": 202.731,
+    "keywords": ["medicine", "clinical research", "public health", "healthcare"],
+    "review_time_days": 80,
+    "acceptance_rate": 0.05,
+    "submission_system": "editorial_manager",
+    "url": "https://www.thelancet.com/"
+  },
+  {
+    "name": "Physical Review Letters",
+    "impact_factor": 8.385,
+    "keywords": ["physics", "quantum mechanics", "condensed matter", "particle physics"],
+    "review_time_days": 70,
+    "acceptance_rate": 0.35,
+    "submission_system": "aps",
+    "url": "https://journals.aps.org/prl/"
+  },
+  {
+    "name": "Journal of the American Chemical Society",
+    "impact_factor": 16.383,
+    "keywords": ["chemistry", "organic chemistry", "inorganic chemistry", "materials"],
+    "review_time_days": 65,
+    "acceptance_rate": 0.30,
+    "submission_system": "acs",
+    "url": "https://pubs.acs.org/journal/jacsat"
+  },
+  {
+    "name": "Proceedings of the National Academy of Sciences",
+    "impact_factor": 11.205,
+    "keywords": ["multidisciplinary", "science", "biology", "physics", "social sciences"],
+    "review_time_days": 55,
+    "acceptance_rate": 0.18,
+    "submission_system": "pnas",
+    "url": "https://www.pnas.org/"
+  },
+  {
+    "name": "Nature Medicine",
+    "impact_factor": 87.241,
+    "keywords": ["medicine", "biomedical research", "clinical medicine", "therapeutics"],
+    "review_time_days": 85,
+    "acceptance_rate": 0.08,
+    "submission_system": "editorial_manager",
+    "url": "https://www.nature.com/nm/"
+  },
+  {
+    "name": "Frontiers in Psychology",
+    "impact_factor": 3.8,
+    "keywords": ["psychology", "cognitive science", "neuroscience", "behavior"],
+    "review_time_days": 90,
+    "acceptance_rate": 0.70,
+    "submission_system": "frontiers",
+    "url": "https://www.frontiersin.org/journals/psychology"
+  },
+  {
+    "name": "Scientific Reports",
+    "impact_factor": 4.996,
+    "keywords": ["multidisciplinary", "open access", "science", "research"],
+    "review_time_days": 50,
+    "acceptance_rate": 0.60,
+    "submission_system": "editorial_manager",
+    "url": "https://www.nature.com/srep/"
+  },
+  {
+    "name": "Bioinformatics",
+    "impact_factor": 6.931,
+    "keywords": ["bioinformatics", "computational biology", "genomics", "data analysis"],
+    "review_time_days": 75,
+    "acceptance_rate": 0.25,
+    "submission_system": "oup",
+    "url": "https://academic.oup.com/bioinformatics"
+  }
+]
