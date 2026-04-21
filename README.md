@@ -1,335 +1,277 @@
-# 🚀 PaperSubmit AI - 论文自动投稿系统
+# -agent
 
-**两种使用方式 | 智能推荐 | 自动化投稿**
+论文投稿智能体
 
----
+## 项目简介
 
-## 📖 系统简介
+这是一个医疗AI项目，致力于通过人工智能技术解决医疗健康领域的挑战。
 
-PaperSubmit AI 提供两种使用方式：
+## 功能特性
 
-### 🤖 方式1: 桌面Agent（推荐）
-- **本地运行**，自动监控文件夹
-- **无需上传**，直接读取本地PDF
-- **自动处理**，生成推荐报告
-- **适合个人**使用
+### 核心功能
+- 🏥 医疗AI核心功能
+- 🔬 智能诊断与分析
+- 📊 数据可视化与报告
+- 🤖 多模态交互支持
+- 🔒 数据安全与隐私保护
 
-### 🌐 方式2: Web界面
-- **Web界面**，可视化操作
-- **团队协作**，多用户支持
-- **API接口**，方便集成
-- **适合团队**使用
+### 技术特性
+- 🚀 高性能计算
+- 📈 可扩展架构
+- 🔄 实时数据处理
+- 🌐 分布式部署
+- 📱 多平台支持
 
----
+## 技术栈
 
-## 🤖 桌面Agent使用（推荐）
+### 后端技术
+- **框架**: Python FastAPI, Django, Flask
+- **AI框架**: TensorFlow, PyTorch, Scikit-learn
+- **数据库**: PostgreSQL, MongoDB, Redis
+- **消息队列**: RabbitMQ, Kafka
+- **容器化**: Docker, Kubernetes
 
-### 快速开始
+### 前端技术
+- **框架**: React, Vue.js, Angular
+- **UI库**: Ant Design, Material-UI, Element UI
+- **可视化**: D3.js, ECharts, Plotly
+- **移动端**: React Native, Flutter
 
-**1. 启动Agent**
-```bash
-cd ~/Desktop/论文投稿Agent/src/backend
-source venv/bin/activate
-python desktop_agent.py
-```
+### 数据处理
+- **分析**: Pandas, NumPy, SciPy
+- **可视化**: Matplotlib, Seaborn, Plotly
+- **大数据**: Spark, Hadoop
+- **流处理**: Flink, Storm
 
-**2. 放入论文**
-```bash
-# 将PDF文件复制到监控文件夹
-cp your_paper.pdf ~/Documents/Papers/
-```
+## 快速开始
 
-**3. 查看推荐**
-```bash
-# Agent自动生成推荐报告
-cat ~/Documents/Papers/your_paper_推荐报告.txt
-```
+### 环境要求
 
-**4. 创建投稿（可选）**
-```bash
-# 创建投稿信息文件
-cat > ~/Documents/Papers/your_paper_投稿信息.json << EOF
-{
-  "journal_name": "arXiv",
-  "username": "your_username",
-  "password": "your_password",
-  "notes": "第一次投稿"
-}
-EOF
-```
-
-**5. 自动处理**
-Agent会自动创建投稿记录并生成确认报告
-
-### 工作流程
-
-```
-放入PDF → Agent发现 → 提取关键词 → 推荐期刊 → 生成报告
-                                                    ↓
-                                          查看报告 → 创建投稿信息
-                                                    ↓
-                                          Agent处理 → 生成投稿确认
-```
-
-### 详细文档
-📖 [桌面Agent使用指南](docs/桌面Agent使用指南.md)
-
----
-
-## 🌐 Web界面使用
-
-### 快速开始
-
-**1. 启动服务**
-```bash
-cd ~/Desktop/论文投稿Agent
-./start.sh
-```
-
-**2. 访问系统**
-- 前端: http://localhost:3001
-- 后端: http://localhost:8000
-- API文档: http://localhost:8000/docs
-
-**3. 使用界面**
-- 上传论文PDF
-- 查看期刊推荐
-- 创建投稿记录
-- 查看投稿状态
-
-### 详细文档
-📖 [Web界面使用指南](docs/使用指南.md)
-
----
-
-## 📊 功能对比
-
-| 功能 | 桌面Agent | Web界面 |
-|------|----------|---------|
-| **部署** | 本地运行 | 需要服务器 |
-| **数据** | 本地文件 | 数据库 |
-| **操作** | 文件夹 | 网页 |
-| **自动化** | ✅ 自动监控 | ❌ 手动上传 |
-| **适用** | 个人 | 团队 |
-| **网络** | 无需联网 | 需要联网 |
-| **界面** | 文本报告 | 可视化 |
-| **API** | ❌ 无 | ✅ 有 |
-
----
-
-## 🎯 使用建议
-
-### 选择桌面Agent，如果你：
-- ✅ 个人使用
-- ✅ 重视数据隐私
-- ✅ 喜欢自动化
-- ✅ 不需要团队协作
-
-### 选择Web界面，如果你：
-- ✅ 团队使用
-- ✅ 需要可视化界面
-- ✅ 需要API集成
-- ✅ 需要多用户管理
-
----
-
-## 📁 项目结构
-
-```
-论文投稿Agent/
-├── src/
-│   ├── backend/
-│   │   ├── desktop_agent.py      # 🤖 桌面Agent主程序
-│   │   ├── main.py                # 🌐 Web后端API
-│   │   └── ...
-│   ├── frontend/
-│   │   └── web/
-│   │       └── index.html         # 🌐 Web前端界面
-│   └── ml_models/
-│       ├── keyword_extractor.py   # 关键词提取
-│       └── journal_recommender.py # 期刊推荐
-├── docs/
-│   ├── 桌面Agent使用指南.md       # 🤖 Agent文档
-│   ├── 使用指南.md                # 🌐 Web文档
-│   └── ...
-├── start.sh                       # 🌐 Web启动脚本
-└── README.md                      # 本文件
-```
-
----
-
-## 🚀 核心功能
-
-### 1. 智能期刊推荐
-- TF-IDF关键词提取
-- 余弦相似度匹配
-- 多维度综合评分
-- Top K推荐
-
-### 2. 自动化处理
-- 自动监控文件夹（Agent）
-- 自动提取关键词
-- 自动生成报告
-- 自动创建投稿记录
-
-### 3. 数据管理
-- 本地JSON数据库（Agent）
-- SQLite数据库（Web）
-- 数据导出功能
-- 统计分析
-
-### 4. 安全保障
-- AES-256加密
-- 本地数据存储
-- 密码不明文保存
-
----
-
-## 📖 完整文档
-
-### 桌面Agent
-- 📖 [桌面Agent使用指南](docs/桌面Agent使用指南.md)
-- 📖 [系统架构设计](docs/系统架构设计文档.md)
-
-### Web界面
-- 📖 [Web使用指南](docs/使用指南.md)
-- 📖 [API文档](http://localhost:8000/docs)
-
-### 其他文档
-- 📖 [商业计划书](docs/商业计划书.md)
-- 📖 [开发计划](docs/2天开发计划.md)
-- 📖 [项目完成报告](docs/最终功能完成报告.md)
-
----
-
-## 💡 使用示例
-
-### 桌面Agent示例
-
-**场景：处理一篇机器学习论文**
-
-```bash
-# 1. 启动Agent
-python desktop_agent.py
-
-# 2. 放入论文
-cp deep_learning_paper.pdf ~/Documents/Papers/
-
-# 3. Agent自动处理（几秒钟后）
-# 生成文件：
-# - deep_learning_paper_推荐报告.txt
-# - 投稿状态总览.txt
-
-# 4. 查看推荐
-cat ~/Documents/Papers/deep_learning_paper_推荐报告.txt
-
-# 5. 创建投稿
-cat > ~/Documents/Papers/deep_learning_paper_投稿信息.json << EOF
-{
-  "journal_name": "IEEE TPAMI",
-  "username": "myuser",
-  "password": "mypass",
-  "notes": "投稿到顶级期刊"
-}
-EOF
-
-# 6. Agent自动处理（下次扫描时）
-# 生成文件：
-# - deep_learning_paper_投稿确认.txt
-# - deep_learning_paper_投稿信息_已处理.json
-```
-
-### Web界面示例
-
-**场景：团队协作投稿**
-
-```bash
-# 1. 启动服务
-./start.sh
-
-# 2. 打开浏览器
-# http://localhost:3001
-
-# 3. 上传论文
-# - 选择PDF文件
-# - 填写标题、作者、摘要
-# - 点击"上传并获取推荐"
-
-# 4. 查看推荐
-# - 系统显示Top 5期刊
-# - 查看匹配度、影响因子等
-
-# 5. 创建投稿
-# - 选择目标期刊
-# - 输入账号密码
-# - 点击"投稿"
-
-# 6. 跟踪进度
-# - 切换到"投稿仪表盘"
-# - 查看所有投稿状态
-```
-
----
-
-## 🛠️ 技术栈
-
-### 后端
 - Python 3.9+
-- FastAPI (Web API)
-- SQLAlchemy (数据库)
-- scikit-learn (机器学习)
-- Selenium (自动化)
+- Node.js 16+
+- Docker 20+
+- Git 2.30+
 
-### 前端
-- HTML/CSS/JavaScript
-- 响应式设计
+### 安装步骤
 
-### 算法
-- TF-IDF (关键词提取)
-- 余弦相似度 (期刊匹配)
-- 多维度评分 (综合推荐)
+1. **克隆仓库**
+```bash
+git clone https://github.com/MoKangMedical/-agent.git
+cd -agent
+```
+
+2. **后端设置**
+```bash
+# 创建虚拟环境
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate  # Windows
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 配置环境变量
+cp .env.example .env
+# 编辑.env文件，配置数据库连接等
+```
+
+3. **前端设置**
+```bash
+cd frontend
+npm install
+npm run build
+```
+
+4. **数据库设置**
+```bash
+# 初始化数据库
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+5. **启动服务**
+```bash
+# 使用Docker Compose（推荐）
+docker-compose up -d
+
+# 或手动启动
+python manage.py runserver
+```
+
+## 项目结构
+
+```
+-agent/
+├── backend/                 # 后端代码
+│   ├── api/                # API接口
+│   ├── models/             # 数据模型
+│   ├── services/           # 业务逻辑
+│   ├── utils/              # 工具函数
+│   └── tests/              # 测试用例
+├── frontend/               # 前端代码
+│   ├── src/               # 源代码
+│   ├── public/            # 静态资源
+│   └── package.json       # 依赖配置
+├── ai-engine/             # AI引擎
+│   ├── models/           # AI模型
+│   ├── training/         # 训练脚本
+│   └── inference/        # 推理服务
+├── data/                  # 数据存储
+│   ├── raw/              # 原始数据
+│   ├── processed/        # 处理后的数据
+│   └── models/           # 训练好的模型
+├── docs/                  # 项目文档
+│   ├── api/              # API文档
+│   ├── user/             # 用户手册
+│   └── dev/              # 开发文档
+├── scripts/               # 脚本工具
+│   ├── deploy/           # 部署脚本
+│   ├── data/             # 数据处理脚本
+│   └── utils/            # 工具脚本
+├── tests/                 # 测试代码
+├── docker-compose.yml     # Docker编排
+├── Dockerfile            # Docker配置
+├── requirements.txt      # Python依赖
+├── .env.example          # 环境变量示例
+├── .gitignore           # Git忽略文件
+└── README.md            # 项目说明
+```
+
+## API文档
+
+### 主要接口
+
+#### 基础接口
+- `GET /` - 首页
+- `GET /health` - 健康检查
+- `GET /api/v1/status` - 系统状态
+
+#### 数据接口
+- `GET /api/v1/data` - 获取数据列表
+- `POST /api/v1/data` - 上传数据
+- `GET /api/v1/data/<built-in function id>` - 获取特定数据
+
+#### 分析接口
+- `POST /api/v1/analyze` - 数据分析
+- `GET /api/v1/analyze/<built-in function id>` - 获取分析结果
+- `GET /api/v1/reports` - 获取报告列表
+
+#### 用户接口
+- `POST /api/v1/auth/login` - 用户登录
+- `POST /api/v1/auth/register` - 用户注册
+- `GET /api/v1/users/me` - 获取当前用户信息
+
+### 详细文档
+
+启动服务后，访问以下地址查看完整API文档：
+
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+- **OpenAPI JSON**: http://localhost:8000/openapi.json
+
+## 配置说明
+
+### 环境变量
+
+创建 `.env` 文件并配置以下变量：
+
+```bash
+# 基础配置
+DEBUG=True
+SECRET_KEY=your-secret-key
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# 数据库配置
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+REDIS_URL=redis://localhost:6379/0
+
+# AI服务配置
+OPENAI_API_KEY=your-openai-key
+HUGGINGFACE_TOKEN=your-hf-token
+
+# 文件存储配置
+AWS_ACCESS_KEY_ID=your-aws-key
+AWS_SECRET_ACCESS_KEY=your-aws-secret
+AWS_STORAGE_BUCKET_NAME=your-bucket-name
+
+# 邮件配置
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-email-password
+```
+
+## 部署指南
+
+### Docker部署（推荐）
+
+1. **构建镜像**
+```bash
+docker build -t -agent .
+```
+
+2. **运行容器**
+```bash
+docker run -d -p 8000:8000 --name -agent -agent
+```
+
+3. **使用Docker Compose**
+```bash
+docker-compose up -d
+```
+
+## 测试
+
+### 运行测试
+
+```bash
+# 运行所有测试
+python -m pytest tests/
+
+# 运行特定测试
+python -m pytest tests/test_api.py
+
+# 生成测试覆盖率报告
+python -m pytest --cov=app tests/
+```
+
+## 贡献指南
+
+我们欢迎任何形式的贡献！请遵循以下步骤：
+
+1. **Fork本仓库**
+2. **创建特性分支**
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. **提交更改**
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+
+4. **推送到分支**
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. **创建Pull Request**
+
+## 许可证
+
+本项目采用 [MIT License](LICENSE) 许可证。
+
+## 联系方式
+
+- **项目维护者**: MoKangMedical
+- **邮箱**: contact@mokangmedical.com
+- **项目主页**: https://github.com/MoKangMedical/-agent
+- **问题反馈**: https://github.com/MoKangMedical/-agent/issues
+
+## 致谢
+
+感谢所有为这个项目做出贡献的开发者和医疗领域专家！
 
 ---
 
-## 📞 获取帮助
-
-### 桌面Agent
-```bash
-python desktop_agent.py --help
-```
-
-### Web界面
-访问 API 文档: http://localhost:8000/docs
-
-### 文档
-查看 `docs/` 目录下的详细文档
-
----
-
-## 🎉 开始使用
-
-### 桌面Agent（推荐个人使用）
-```bash
-cd ~/Desktop/论文投稿Agent/src/backend
-source venv/bin/activate
-python desktop_agent.py
-```
-
-### Web界面（推荐团队使用）
-```bash
-cd ~/Desktop/论文投稿Agent
-./start.sh
-```
-
-**让学术发表更简单！** 🚀
-
----
-
-**项目地址:** ~/Desktop/论文投稿Agent  
-**版本:** v1.0 Final  
-**更新日期:** 2026-02-05
-
-## 📐 理论基础
-
-> **Harness理论**：在AI领域，Harness（环境设计）比模型本身更重要。
-> **红杉论点**：从卖工具到卖结果。
+**注意**: 这是一个活跃开发中的项目，API和功能可能会发生变化。请定期查看更新日志获取最新信息。
