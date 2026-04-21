@@ -63,3 +63,7 @@ geckodriver
 *.tmp
 *.bak
 *.swp
+*.key
+*.pem
+*_secret*
+credentials.json
